@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Firefox, the Latest
+GenericName=Firefox, the Latest
+Comment=Firefox updater tool
+Exec=gksu python3 /opt/firefox-the-latest/firefox-the-latest.py gui
+Icon=/usr/share/pixmaps/firefox-standard-the-latest.png
+Terminal=false
+Type=Application
+Categories=System;
+StartupNotify=false

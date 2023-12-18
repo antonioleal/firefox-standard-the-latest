@@ -1,0 +1,8 @@
+[Desktop Entry]
+Exec=/opt/firefox-standard/firefox %u
+Icon=/usr/share/pixmaps/firefox-standard.png
+Type=Application
+Categories=Network;WebBrowser;
+Name=Firefox Standard
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
+X-KDE-StartupNotify=true
