@@ -15,7 +15,8 @@ mkdir -p $DEST
 chmod +x *.py
 chmod +x *.sh
 
-cp -avxu * $DEST
+cp -r * $DEST
+chown -R root. /opt/firefox-standard-the-latest/*
 
 cp firefox-standard-the-latest.png /usr/share/pixmaps
 cp firefox-standard-the-latest.desktop /usr/share/applications

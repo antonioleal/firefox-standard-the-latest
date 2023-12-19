@@ -203,12 +203,12 @@ def get_web_version():
     
 # Download from mozi and confirm the release version
 def get_new_version():
-    ###########os.system('/usr/bin/wget -O firefox-standard.tar.bz2 "%s"' % DOWNLOAD_LINK)
+    os.system('/usr/bin/wget -O firefox-standard.tar.bz2 "%s"' % DOWNLOAD_LINK)
     return os.popen('tar -xOf firefox-standard.tar.bz2 firefox/application.ini | grep "^Version="').read().strip().split('=')[1].strip()
 
 # Create a slackware package
 def pack(version):
-    #########os.system('rm -rf pkg/opt/firefox-standard')
+    os.system('rm -rf pkg/opt/firefox-standard')
     os.system('tar -xf firefox-standard.tar.bz2')
     os.system('mv firefox pkg/opt/firefox-standard')
     return os.popen("cd pkg && /sbin/makepkg -l y -c n /tmp/mozilla-firefox-standard-%s-x86_64-1_SBo.tgz" % version).read()
@@ -220,7 +220,7 @@ def install(version):
 # remove rpm file
 def cleanup():
     os.system('rm -rf pkg/opt/firefox-standard')
-    #########os.system('rm -rf firefox-standard.tar.bz2')
+    os.system('rm -rf firefox-standard.tar.bz2')
 
 #**********************************************************************************
 #*                                                                                *
