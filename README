@@ -30,9 +30,8 @@ dialogs appear and disappear. Don't be alarmed and wait for the
 program to end.
 
 Note 2: This program installs the Firefox **Standard** not the **ESR**
-Release that is part stock Slackware.
-In order to avoid confusion, the icon for the Standard Release
-is Painted Purple, as both releases can be installed at the same time.
+Release that is part stock Slackware. Both releases can be installed
+at the same time on the same machine.
 
 
 Workflows:
