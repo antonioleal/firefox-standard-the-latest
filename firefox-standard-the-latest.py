@@ -208,9 +208,12 @@ def get_new_version():
 
 # Create a slackware package
 def pack(version):
-    os.system('rm -rf pkg/opt/firefox-standard')
+    os.system('rm -rf pkg/opt')
+    os.system('mkdir -p pkg/opt')
     os.system('tar -xf firefox-standard.tar.bz2')
     os.system('mv firefox pkg/opt/firefox-standard')
+    os.system('mkdir -p pkg/opt/firefox-standard/distribution')
+    os.system('cp policies.json pkg/opt/firefox-standard/distribution')
     return os.popen("cd pkg && /sbin/makepkg -l y -c n /tmp/mozilla-firefox-standard-%s-x86_64-1_SBo.tgz" % version).read()
 
 # Installing on you box

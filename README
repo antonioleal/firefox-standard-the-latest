@@ -1,5 +1,5 @@
-﻿Installing and Maintaining an updated Firefox Standard on Slackware
-is now made easier with this small program, "firefox-standard-the-latest".
+Installing and Maintaining an updated Firefox Standard on Slackware
+is now easier with this small program,"firefox-standard-the-latest".
 It is a simple python script that checks what is the latest
 version available and updates it on your Slackware box.
 
@@ -33,6 +33,8 @@ Note 2: This program installs the Firefox **Standard** not the **ESR**
 Release that is part stock Slackware. Both releases can be installed
 at the same time on the same machine.
 
+Note 3: The provided policies.json file disables auto-updates,
+        which are carried out by this script, of course.
 
 Workflows:
 
@@ -43,10 +45,13 @@ Workflows:
    in the desktop menu to trigger the download, check and
    install/upgrade the browse if required.
 
-3. From the command line, if you don't have yet Firefox Standar installed
-   you can do so by simply by running:
-   /opt/firefox-standard-the-latest/firefox-standard-the-latest.py install
+3. From the command line, if you don't have yet Firefox Standard
+   installed you can do so by simply by running:
+   cd /opt/firefox-standard-the-latest
+   ./firefox-standard-the-latest.py install
 
 4. From the command line, you can force a Firefox download and
    upgrade if required, without any pop-up window, with:
-   /opt/firefox-standard-the-latest/firefox-standard-the-latest.py silent upgrade
+   cd /opt/firefox-standard-the-latest
+   ./firefox-standard-the-latest.py silent upgrade
+
