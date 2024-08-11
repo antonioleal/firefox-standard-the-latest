@@ -43,4 +43,4 @@ done
 
 export XAUTHORITY=/home/$USERNAME/.Xauthority
 export DISPLAY=:0
-python3 /opt/firefox-standard-the-latest/firefox-standard-the-latest.py
+python3 /opt/firefox-standard-the-latest/firefox-standard-the-latest.py &
